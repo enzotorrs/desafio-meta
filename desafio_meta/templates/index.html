@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Insights</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="container">
+    <header class="cabecalho">
+        <div class="cabecalho-superior">
+            <a class="cabecalho-link" href="{% url 'index' %}">
+            </a>
+            <img class="cabecalho-perfil" src="{% static 'image/perfil.jpeg' %}" alt="foto perfil">
+            <a class="cabecalho-adicionar" href="{% url 'addcard' %}">
+            </a>
+        </div>
+        <div class="cabecalho-inferior">
+            <h2 class="cabecalho-titulo">Olá, Antonio</h2>
+            <p class="cabecalho-subtitulo">antonio.pina@g.globo</p>
+        </div>
+    </header>
+
+    <main>
+        <header class="cabecalho-feed"><h1 class="feed-titulo">Feed de Insights</h1></header>
+        <section class="feed">
+            <ul class="feed-lista">
+                {% for insight in insights %}
+                    <li class="feed-card">
+                        <p class="card-texto">{{insight.texto}}</p>
+                        <span class="card-tag">{{insight.tags}}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section class="pesquisa">
+            <input class="pesquisa-input" type="text" placeholder="Pesquise por termos ou categorias...">
+        </section>
+    </main>
+    
+</body>
+</html>

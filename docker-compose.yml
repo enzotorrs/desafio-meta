@@ -1,0 +1,42 @@
+version: "3"
+services:
+  nginx:
+    build:
+      dockerfile: ./nginx/Dockerfile
+      context: .
+
+    image: desafio/nginx
+    container_name: ngix
+    ports:
+      - "80:80"
+    networks:
+      - desafio
+
+  aplicacao:
+    build:
+      dockerfile: ./desafio_meta/Dockerfile
+      context: .
+
+    image: desafio/aplicacao
+    container_name: aplicacao
+    ports:
+      - "8000:8000"
+    networks: 
+      - desafio
+
+  api:
+    build:
+      dockerfile: ./desafio_metaAPI/Dockerfile
+      context: .
+
+    image: desafio/api
+    container_name: desafio
+    ports:
+      - "8080:8080"
+    networks:
+      - desafio
+
+networks:
+  desafio:
+    driver: bridge
+

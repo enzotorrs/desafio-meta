@@ -1,0 +1,116 @@
+body {
+    background-color: #fefefe;
+}
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.cabecalho-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-link {
+    background-image: url('../image/brand.svg');
+    background-position: center;
+    background-size: 3em;
+    background-repeat:no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.cabecalho-perfil {
+    width: 50px;
+}
+
+.cabecalho-adicionar {
+    background-image: url('../image/add-icon.svg');
+    background-position: center;
+    background-repeat:no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.cabecalho-inferior {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.cabecalho-subtitulo {
+    display: inline-block;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #000;
+}
+
+.feed-titulo {
+    color: rgb(237, 77, 119);
+}
+
+.cabecalho-feed {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.feed-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 7vh;
+}
+
+.card-tag {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #ED4D77;
+    border: 2px solid rgba(237, 77, 119, 0.6);
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 2em;
+    font-weight: 700;
+}
+
+.feed-card {
+    width: 95%;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.pesquisa {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pesquisa-input {
+    max-width: calc(970px -1rem);
+    width: 90%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    margin: 1rem auto;
+
+
+}
+
+@media (min-width:600px) {
+    .pesquisa-input {
+        width: 50%;
+    }
+    .feed {
+        margin-bottom: 5em;
+    }
+}

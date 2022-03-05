@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(244, 244, 244);
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    height: 108px;
+    position: relative;
+    margin-bottom: 3em;
+    background-image: url('../image/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    box-sizing: content-box;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+
+}
+
+.cabecalho-voltar {
+    background-image: url('../image/arrow_back.svg');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    left: 5px;
+    bottom: 40%;
+    height: 30px;
+    width: 30px;
+}
+
+.cabecalho-titulos{
+    text-align: center;
+    color: rgb(237, 77, 119);
+    font-size: 1em;
+    margin: 0 auto;
+    display: inline;
+
+}
+
+.cabecalho-criar {
+    font-weight: 100;
+}
+
+.cabecalho-insight {
+    font-weight: bold;
+}
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+
+}
+.formulario {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    align-items: center;
+    border-radius: 10px;
+    height: 400px;
+    padding: 5px;
+}
+
+
+.formulario-input {
+    font-size: 1em;
+    width: 100%;
+    background-color: #fff;
+    border: 0;
+    padding: 1em;
+    vertical-align: top;
+}
+
+.card-tag {
+    padding-top: 3em;
+    color: #010101;
+}
+
+.card-texto {
+    padding-bottom: 260px;
+    border-bottom: 1px solid #ccc;
+}
+
+.formulario-submit {
+    position: fixed;
+    bottom: 1em;
+    width: 95%;
+    height: 3em;
+    font-size: 1em;
+    background-color: rgb(237, 77, 119);
+    color: #fefefe;
+    border-radius: 15px;
+}
+
+@media (min-width:600px) {
+    .cabecalho-titulos{
+        font-size: 0.8em;
+    }
+    .formulario-submit {
+        width: 50%
+    }
+}

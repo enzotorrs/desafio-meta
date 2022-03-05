@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar cards</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/addcard.css' %}">
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="cabecalho-voltar" href="{% url 'index' %}"></a>
+        <div class="cabecalho-titulos">
+            <h2 class="cabecalho-criar">CRIAR</h2>
+            <h2 class="cabecalho-insight">INSIGHT</h2>
+        </div>
+    </header>
+    <main class="container">
+
+        <form class="formulario" method="POST" action="{% url 'adcionacardpostado' %}" >
+            {% csrf_token %}
+            {{ form.insight }}
+            {{ form.categoria }}
+            <input class="formulario-submit" type="submit" value="PUBLICAR">
+        </form>
+    </main>
+    
+</body>
+</html>
