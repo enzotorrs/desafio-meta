@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body class="container">
+    <div class="background"></div>
     <header class="cabecalho">
         <div class="cabecalho-superior">
             <a class="cabecalho-link" href="{% url 'index' %}">
             </a>
-            <img class="cabecalho-perfil" src="{% static 'image/perfil.jpeg' %}" alt="foto perfil">
+            <div class="cabecalho-perfil"></div>
             <a class="cabecalho-adicionar" href="{% url 'addcard' %}">
             </a>
         </div>
         <div class="cabecalho-inferior">
-            <h2 class="cabecalho-titulo">Olá, Antonio</h2>
-            <p class="cabecalho-subtitulo">antonio.pina@g.globo</p>
+            <h2 class="cabecalho-titulo">Olá, Enzo</h2>
+            <p class="cabecalho-subtitulo">enzotorres969@gmail.com</p>
         </div>
     </header>
 
