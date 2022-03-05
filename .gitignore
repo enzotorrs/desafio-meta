@@ -54,5 +54,3 @@ docs/_build/.pyc
 __pycache__*
 
 *.pyc
-text
-*.sqlite3
