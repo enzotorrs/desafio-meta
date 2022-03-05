@@ -3,7 +3,7 @@ import requests
 import json
 
 
-request_para_api = requests.get('http://localhost:8080/tag/')
+request_para_api = requests.get('http://desafio:8080/tag/')
 print(request_para_api)
 request_parseado = json.loads(request_para_api.content)
 tags = []
