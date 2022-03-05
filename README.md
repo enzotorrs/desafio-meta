@@ -18,7 +18,7 @@
 - para fazer a importação CSV via cli na pasta da api (desafio_metaAPI) rodar python manage.py cli_card
 
 
-##TODO:
+## TODO:
 - fazer integração com user default do django e telas para usuario e login
 - fazer a pesquisa funcionar
 - limitar os cards e talvez paginar
