@@ -1,6 +1,7 @@
 ## Sobre
 - desafio Fullstack web da empresa metaIT
-- um webapp de disposição e criação de insights 
+- um webapp de disposição e criação de insights ![image](https://user-images.githubusercontent.com/58372907/194761656-e1f676ad-7232-438c-af28-af8e159b7173.png)
+
 
 ## Descrição tecnica
 - webapp feito em Django, django-restframework, html e css
